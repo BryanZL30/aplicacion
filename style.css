@@ -16,6 +16,7 @@ div{
     border-color: rgb(155, 111, 197);
     border-style: solid;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
