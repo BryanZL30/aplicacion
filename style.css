@@ -12,6 +12,7 @@ div{
     box-sizing: border-box;
 }
 div{
+    width: 290px;
     border-width: 6px ;
     border-color: rgb(155, 111, 197);
     border-style: solid;
