@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es"/>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aprende los Números</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="manifest" href="manifest.json">
+<script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('SW registrado'))
+        .catch(err => console.error('Error al registrar SW:', err));
+}
+</script>
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla de inicio -->
+        <section id="inicio" class="pantalla activa">
+            <h1>Aprende los Números</h1>
+                <p>Selecciona un idioma:</p>
+                    <button onclick="seleccionarIdioma('es')">Español</button>
+                    <button onclick="seleccionarIdioma('en')">Inglés</button>
+        </section>
+    <!-- Pantalla de aprendizaje -->
+        <section id="aprendizaje" class="pantalla">
+            <h2 id="titulo-aprendizaje">Aprende los números</h2>
+    <div2 id="numero-container">
+                <p id="numero-texto"></p>
+                    <button onclick="reproducirNumero()">🔊 Escuchar</button>
+    </div2>
+    <div2>
+                    <button onclick="anteriorNumero()">⏮ Anterior</button>
+                    <button onclick="siguienteNumero()">Siguiente ⏭</button>
+    </div2>
+                    <button onclick="mostrarPantalla('inicio')">🔙 Volver</button>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
