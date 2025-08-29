@@ -1,18 +1,18 @@
 body {
     font-family: sans-serif;
-    background: #000;
+    background: black;
     text-align: center;
     padding: 30px;
 }
 
 div{
     background: rgb(55, 122, 199);
-    width: 290px;
+    width: 350px;
     margin: auto;
     box-sizing: border-box;
 }
 div{
-    width: 290px;
+    width: 300px;
     border-width: 6px ;
     border-color: rgb(155, 111, 197);
     border-style: solid;
